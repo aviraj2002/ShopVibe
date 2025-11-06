@@ -22,7 +22,7 @@ interface HeroCarouselProps {
 export function HeroCarousel({ products }: HeroCarouselProps) {
   const { addToCart } = useCart();
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: false })
   )
 
   const featuredProducts = products.slice(0, 5);
