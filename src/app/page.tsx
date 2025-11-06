@@ -5,6 +5,7 @@ import { CartSheet } from '@/components/cart-sheet';
 import { CheckoutDialog } from '@/components/checkout-dialog';
 import type { Product } from '@/lib/types';
 import { Separator } from '@/components/ui/separator';
+import { HeroCarousel } from '@/components/hero-carousel';
 
 export default async function Home() {
   const products = await getProducts();
@@ -21,8 +22,9 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <HeroCarousel products={products} />
         {Object.entries(categories).map(([category, products], index) => (
-          <section key={category} className="mb-12">
+          <section key={category} className="mb-12 mt-8">
             <h2 className="text-2xl md:text-3xl font-headline font-bold mb-6">
               {category}
             </h2>
