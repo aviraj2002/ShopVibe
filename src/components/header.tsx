@@ -3,6 +3,7 @@
 import { ShoppingCart, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
+import { ThemeToggle } from './theme-toggle';
 
 export function Header() {
   const { itemCount, setIsCartOpen } = useCart();
@@ -16,7 +17,8 @@ export function Header() {
             ShopVibe
           </h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
