@@ -47,6 +47,18 @@
       "description": "A sleek and modern desk lamp with adjustable brightness.",
       "imageUrl": "https://images.unsplash.com/photo-1582356630861-61bb9b41f541?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNrJTIwbGFtcHxlbnwwfHx8fDE3NjIzMTQwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "desk lamp"
+    },
+    {
+      "id": "prod_009",
+      "description": "The latest Google Pixel phone with an amazing camera.",
+      "imageUrl": "https://images.unsplash.com/photo-1658696434289-323a67a7b83f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaXhlbCUyMHBob25lfGVufDB8fHx8MTcyMDYxNzQ3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pixel phone"
+    },
+    {
+      "id": "prod_010",
+      "description": "The new Samsung Galaxy phone with a stunning display.",
+      "imageUrl": "https://images.unsplash.com/photo-1610945265064-0e34e5a1b3b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW1zdW5nJTIwZ2FsYXh5fGVufDB8fHx8MTcyMDYxNzUxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "galaxy phone"
     }
   ]
 }
