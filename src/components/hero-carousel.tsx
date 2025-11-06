@@ -32,8 +32,6 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
       <Carousel 
         plugins={[plugin.current]}
         className="w-full"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
           {featuredProducts.map((product) => (
