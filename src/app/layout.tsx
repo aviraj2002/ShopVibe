@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { CartProvider } from '@/context/cart-context';
 import { ThemeProvider } from '@/context/theme-provider';
+import { AuthProvider } from '@/context/auth-context';
 
 export const metadata: Metadata = {
   title: 'ShopVibe',
@@ -35,10 +36,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CartProvider>
-            {children}
-            <Toaster />
-          </CartProvider>
+          <AuthProvider>
+            <CartProvider>
+              {children}
+              <Toaster />
+            </CartProvider>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
