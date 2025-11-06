@@ -38,13 +38,13 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </div>
       </CardHeader>
-      <CardContent className="p-4 flex-1 flex flex-col">
-        <CardTitle className="text-lg font-headline font-semibold">{product.name}</CardTitle>
-        <CardDescription className="mt-2 text-2xl font-semibold text-primary">
+      <CardContent className="p-3 sm:p-4 flex-1 flex flex-col">
+        <CardTitle className="text-base sm:text-lg font-headline font-semibold">{product.name}</CardTitle>
+        <CardDescription className="mt-2 text-xl sm:text-2xl font-semibold text-primary">
           ${product.price.toFixed(2)}
         </CardDescription>
       </CardContent>
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p-3 sm:p-4 pt-0">
         <Button onClick={handleAddToCart} className="w-full" aria-label={`Add ${product.name} to cart`}>
           <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
         </Button>
