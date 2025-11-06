@@ -10,8 +10,6 @@ const productData: Omit<Product, 'image' | 'imageHint' >[] = [
   { id: 'prod_006', name: 'TypeMaster Keyboard', price: 189.99, category: 'Electronics' },
   { id: 'prod_007', name: 'SonicBoom Speaker', price: 120.00, category: 'Electronics' },
   { id: 'prod_008', name: 'Lumina Lamp', price: 89.95, category: 'Appliances' },
-  { id: 'prod_009', name: 'Pixel 9 Pro', price: 999.00, category: 'Mobile' },
-  { id: 'prod_010', name: 'Galaxy S25', price: 949.00, category: 'Mobile' },
   { id: 'prod_011', name: 'Denim Jacket', price: 129.99, category: 'Fashion' },
   { id: 'prod_012', name: 'Smart Fridge', price: 2499.00, category: 'Appliances' },
 ];
