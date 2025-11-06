@@ -35,17 +35,18 @@ export function ProductCard({ product }: ProductCardProps) {
             fill
             className="object-cover"
             data-ai-hint={product.imageHint}
+            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         </div>
       </CardHeader>
       <CardContent className="p-3 sm:p-4 flex-1 flex flex-col">
-        <CardTitle className="text-base sm:text-lg font-headline font-semibold">{product.name}</CardTitle>
-        <CardDescription className="mt-2 text-xl sm:text-2xl font-semibold text-primary">
+        <CardTitle className="text-sm sm:text-base font-headline font-semibold leading-tight">{product.name}</CardTitle>
+        <CardDescription className="mt-2 text-lg sm:text-xl font-semibold text-primary">
           ${product.price.toFixed(2)}
         </CardDescription>
       </CardContent>
       <CardFooter className="p-3 sm:p-4 pt-0">
-        <Button onClick={handleAddToCart} className="w-full" aria-label={`Add ${product.name} to cart`}>
+        <Button onClick={handleAddToCart} className="w-full" size="sm" aria-label={`Add ${product.name} to cart`}>
           <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
         </Button>
       </CardFooter>

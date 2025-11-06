@@ -33,37 +33,38 @@ export function CartSheet() {
 
   return (
     <Sheet open={isCartOpen} onOpenChange={setIsCartOpen}>
-      <SheetContent className="flex flex-col w-full sm:max-w-md">
+      <SheetContent className="flex flex-col w-full sm:max-w-lg">
         <SheetHeader className="pr-6">
           <SheetTitle className='font-headline text-2xl'>My Cart ({itemCount})</SheetTitle>
         </SheetHeader>
         {cartItems.length > 0 ? (
           <>
             <ScrollArea className="flex-1 -mx-6">
-              <div className="px-6">
+              <div className="px-6 divide-y divide-border">
                 {cartItems.map((item) => (
                   <div key={item.id} className="flex items-start gap-4 py-4">
-                    <div className="relative h-20 w-20 rounded-md overflow-hidden flex-shrink-0">
+                    <div className="relative h-20 w-20 sm:h-24 sm:w-24 rounded-md overflow-hidden flex-shrink-0">
                       <Image
                         src={item.image}
                         alt={item.name}
                         fill
+                        sizes="100px"
                         className="object-cover"
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-base">{item.name}</h3>
-                      <p className="text-muted-foreground text-sm">
+                      <h3 className="font-semibold text-base leading-tight">{item.name}</h3>
+                      <p className="text-muted-foreground text-sm mt-1">
                         Quantity: {item.quantity}
                       </p>
-                      <p className="font-semibold mt-1">
+                      <p className="font-bold text-lg mt-2">
                         ${(item.price * item.quantity).toFixed(2)}
                       </p>
                     </div>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="text-muted-foreground hover:text-destructive"
+                      className="text-muted-foreground hover:text-destructive shrink-0"
                       onClick={() => removeFromCart(item.id)}
                       aria-label={`Remove ${item.name} from cart`}
                     >
@@ -73,7 +74,7 @@ export function CartSheet() {
                 ))}
               </div>
             </ScrollArea>
-            <SheetFooter className="mt-auto">
+            <SheetFooter className="mt-auto pt-4">
               <div className="w-full space-y-4">
                 <Separator />
                 <div className="flex justify-between items-center font-bold text-lg">
@@ -87,10 +88,10 @@ export function CartSheet() {
             </SheetFooter>
           </>
         ) : (
-          <div className="flex-1 flex flex-col items-center justify-center text-center gap-4">
-            <ShoppingBag className="h-24 w-24 text-muted-foreground/50" />
+          <div className="flex-1 flex flex-col items-center justify-center text-center gap-4 p-8">
+            <ShoppingBag className="h-24 w-24 text-muted-foreground/30" />
             <h2 className="font-headline text-xl font-semibold">Your cart is empty</h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground max-w-xs">
               Looks like you haven't added anything to your cart yet.
             </p>
             <SheetClose asChild>
