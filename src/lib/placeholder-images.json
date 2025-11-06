@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "prod_001",
+      "description": "A stylish wireless headphone with noise-cancellation.",
+      "imageUrl": "https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3aXJlbGVzcyUyMGhlYWRwaG9uZXN8ZW58MHx8fHwxNzYyMzgwOTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wireless headphones"
+    },
+    {
+      "id": "prod_002",
+      "description": "A modern, minimalist smartwatch with health tracking.",
+      "imageUrl": "https://images.unsplash.com/photo-1617625802912-cde586faf331?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWFydHdhdGNofGVufDB8fHx8MTc2MjM1MzA1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartwatch"
+    },
+    {
+      "id": "prod_003",
+      "description": "A durable and insulated stainless steel water bottle.",
+      "imageUrl": "https://images.unsplash.com/photo-1544003484-3cd181d17917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjIzNDI0MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "prod_004",
+      "description": "A handcrafted leather journal for your thoughts and ideas.",
+      "imageUrl": "https://images.unsplash.com/photo-1663809087021-21bdd11cad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhdGhlciUyMGpvdXJuYWx8ZW58MHx8fHwxNzYyMzY5ODQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leather journal"
+    },
+    {
+      "id": "prod_005",
+      "description": "A set of aromatic scented candles for relaxation.",
+      "imageUrl": "https://images.unsplash.com/photo-1580445206726-c6eace8e02e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2VudGVkJTIwY2FuZGxlc3xlbnwwfHx8fDE3NjI0MDYxMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scented candles"
+    },
+    {
+      "id": "prod_006",
+      "description": "An ergonomic mechanical keyboard for typing comfort.",
+      "imageUrl": "https://images.unsplash.com/photo-1512455011254-e2db8db4ef22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtZWNoYW5pY2FsJTIwa2V5Ym9hcmR8ZW58MHx8fHwxNzYyMzg2MDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mechanical keyboard"
+    },
+    {
+      "id": "prod_007",
+      "description": "A portable bluetooth speaker with rich bass.",
+      "imageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxibHVldG9vdGglMjBzcGVha2VyfGVufDB8fHx8MTc2MjQwNTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bluetooth speaker"
+    },
+    {
+      "id": "prod_008",
+      "description": "A sleek and modern desk lamp with adjustable brightness.",
+      "imageUrl": "https://images.unsplash.com/photo-1582356630861-61bb9b41f541?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNrJTIwbGFtcHxlbnwwfHx8fDE3NjIzMTQwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk lamp"
+    }
+  ]
 }
