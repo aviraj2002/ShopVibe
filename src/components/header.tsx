@@ -1,6 +1,6 @@
 'use client';
 
-import { ShoppingCart, Store } from 'lucide-react';
+import { ShoppingCart, Store, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
 import { ThemeToggle } from './theme-toggle';
@@ -32,6 +32,9 @@ export function Header() {
                 {itemCount}
               </span>
             )}
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="User Account">
+            <User className="h-6 w-6" />
           </Button>
         </div>
       </div>
